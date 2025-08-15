@@ -1023,55 +1023,6 @@ function displayCustomIcons() {
     return $output;
 }
 
-/* ACF CUSTOM OPTIONS TABS */
-if( function_exists('acf_add_options_page') ) {
-    acf_add_options_page();
-}
-function be_acf_options_page() {
-    if ( ! function_exists( 'acf_add_options_page' ) ) return;
-    
-    $acf_option_tabs = array(
-        array( 
-            'title'      => 'Today Options',
-            'capability' => 'manage_options',
-        ),
-        array( 
-            'title'      => 'Menu Options',
-            'capability' => 'manage_options',
-        ),
-        array( 
-            'title'      => 'Global Options',
-            'capability' => 'manage_options',
-        )
-    );
-
-    foreach($acf_option_tabs as $options) {
-        acf_add_options_page($options);
-    }
-}
-add_action( 'acf/init', 'be_acf_options_page' );
-
-/* Options page under Story custom post type */
-if( function_exists('acf_add_options_page') ) {
-    acf_add_options_sub_page(array(
-        'page_title'     => 'Other Activities',
-        'menu_title'    => 'Other Activities',
-        'parent_slug'    => 'edit.php?post_type=activity'
-    ));
-
-    acf_add_options_sub_page(array(
-        'page_title'    => 'River Jam Programming',
-        'menu_title'    => 'River Jam Programming',
-        'parent_slug'   => 'edit.php?post_type=music'
-    ));
-
-    acf_add_options_sub_page(array(
-        'page_title'    => 'River Jam Options',
-        'menu_title'    => 'River Jam Options',
-        'parent_slug'   => 'edit.php?post_type=music'
-    ));
-}
-
 function get_vimeo_data($vimeoId) {
     if (empty($vimeoId)) return '';
     $obj = @unserialize(file_get_contents("https://vimeo.com/api/v2/video/".$vimeoId.".php"));
