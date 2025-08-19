@@ -43,18 +43,31 @@ class RW_GF_Total_Field_Logic {
   
 }
 new RW_GF_Total_Field_Logic();
+
 /*-------------------------------------
   Custom client login, link and title.
 ---------------------------------------*/
-function my_login_logo() { 
+function my_login() { 
   $custom_logo_id = get_theme_mod( 'custom_logo' );
   $logoImg = wp_get_attachment_image_src($custom_logo_id,'large');
   $logo_url = ($logoImg) ? $logoImg[0] : '';
   if($custom_logo_id) { ?>
   <style type="text/css">
+    body.login {
+      background: #3C8A91;
+    }
+    body.login div#login {
+      position: relative;
+      z-index: 10;
+    }
+    body.login div#login form {
+      border: none;
+    }
     body.login div#login h1 a {
       background-image: url(<?php echo $logo_url; ?>);
       background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
       width: 100%;
       height: 100px;
       margin-bottom: 10px;
@@ -62,11 +75,36 @@ function my_login_logo() {
     .login #backtoblog, .login #nav {
       text-align: center;
     }
-
+    body.login div#login p.submit {
+      width: 100%; 
+      margin-top: 35px;
+    }
+    body.login div#login p.submit input.button {
+      width: 100%;
+      text-align: center;
+      border-radius: 4px;
+    }
+    body.login.wp-core-ui .button-primary {
+      font-size: 13px;
+      font-weight: bold;
+      background: #052952;
+      border-color: #052952;
+      transition: all ease .3s;
+    }
+    body.login.wp-core-ui .button-primary:hover {
+      background: #92CCB3;
+      border-color: #92CCB3;
+    }
+    body.login div#login a {
+      color: #FFFFFF;
+    }
+    body.login div#login a:hover {
+      color: #052952;
+    }
   </style>
 <?php }
 }
-add_action( 'login_enqueue_scripts', 'my_login_logo' );
+add_action( 'login_enqueue_scripts', 'my_login', 10);
 
 // Change Link
 function loginpage_custom_link() {

@@ -127,7 +127,7 @@ a {
 	}
 }
 .wrapper {
-	// max-width: 1200px;
+	max-width: 1600px;
 	width: 100%;
 	margin: 0 auto;
 	padding-left: 20px;
@@ -594,11 +594,11 @@ section {
 
 	.bottom-content {
 		position: absolute;
-		left: 0;
-		bottom: 0;
+		left: auto;
+		bottom: 20px;
 		z-index: 2;
 		padding: 0 25px;
-		width: 84%;
+		// width: 84%;
 	}
 
 	.main-content,
@@ -619,6 +619,11 @@ section {
 	z-index: 5;
 	opacity: 0;
 	transition: all ease .5s;
+
+	@include desk {
+		right: 50px;
+		bottom: 40px;
+	}
 
 	&.show {
 		opacity: 1;
