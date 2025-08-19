@@ -33,12 +33,15 @@ jQuery(document).ready(function ($) {
 
   if ($(".main-content").length > 0) {
     setTimeout(function () {
-      $("#site-logo").addClass("show");
-      $(".main-content, .bottom-content, .footer-social-media").addClass("show");
-    }, 2000);
-    setTimeout(function () {
-      $(".section_home").addClass("show-bg");
-    }, 2800);
+      $(".section_home").removeClass("hide");
+      setTimeout(function () {
+        $("#site-logo").addClass("show");
+        $(".main-content, .bottom-content, .footer-social-media").addClass("show");
+      }, 800);
+      setTimeout(function () {
+        $(".section_home").addClass("show-bg");
+      }, 1200);
+    }, 1800);
   }
   /*** END Homepage Animation ***/
 

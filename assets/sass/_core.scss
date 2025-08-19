@@ -551,6 +551,11 @@ section {
 
 	&.section_home {
 		background-color: $teal;
+		transition: all ease .3s;
+
+		&.hide {
+			opacity: 0;
+		}
 
 		&:before {
 			content: '';

@@ -6,7 +6,7 @@ get_header();
       while ( have_posts() ) : the_post();
         $bottom_content = get_field('bottom_content');
     ?>
-      <section class="section_home">
+      <section class="section_home hide">
         <div class="main-content">
           <?php the_content(); ?>
         </div>
