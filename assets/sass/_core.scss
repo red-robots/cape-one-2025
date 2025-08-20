@@ -153,8 +153,8 @@ a {
 }
 /* Header */
 .site-header {
-	top: 25px;
-	left: 0;
+	top: 40px;
+	left: 5px;
 	width: 100%;
 	z-index: 1000;
 	transition: all ease .5s;
@@ -540,7 +540,7 @@ body.nav-open {
 
 body.logged-in.admin-bar {
 	.site-header {
-		top: 45px;
+		top: 60px;
 	}
 }
 
