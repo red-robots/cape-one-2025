@@ -127,7 +127,7 @@ a {
 	}
 }
 .wrapper {
-	max-width: 1600px;
+	// max-width: 1600px;
 	width: 100%;
 	margin: 0 auto;
 	padding-left: 20px;
@@ -223,6 +223,10 @@ a {
 		position: relative;
 		left: 0;
 	  }
+	}
+
+	@include desk {
+		padding-left: 30px;
 	}
 }
 
@@ -536,7 +540,7 @@ body.nav-open {
 
 body.logged-in.admin-bar {
 	.site-header {
-		top: 42px;
+		top: 45px;
 	}
 }
 
@@ -600,11 +604,16 @@ section {
 
 	.bottom-content {
 		position: absolute;
-		left: auto;
+		left: 15px;
 		bottom: 20px;
 		z-index: 2;
-		padding: 0 25px;
-		// width: 84%;
+		padding: 0 15px;
+		width: 84%;
+
+		@include desk {
+			padding: 0;
+			left: 50px;
+		}
 	}
 
 	.main-content,

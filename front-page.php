@@ -12,7 +12,7 @@ get_header();
         </div>
 
         <?php if($bottom_content){ ?>
-          <div class="bottom-content wrapper">
+          <div class="bottom-content">
             <?php echo $bottom_content; ?>
           </div>
         <?php } ?>
