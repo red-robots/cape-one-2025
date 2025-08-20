@@ -37,11 +37,11 @@ jQuery(document).ready(function ($) {
       setTimeout(function () {
         $("#site-logo").addClass("show");
         $(".main-content, .bottom-content, .footer-social-media").addClass("show");
-      }, 800);
+      }, 500);
       setTimeout(function () {
         $(".section_home").addClass("show-bg");
-      }, 1200);
-    }, 1800);
+      }, 1000);
+    }, 1);
   }
   /*** END Homepage Animation ***/
 
