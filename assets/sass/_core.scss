@@ -49,7 +49,6 @@ pre {
 }
 html {
 	margin-top: 0 !important;
-	overflow: hidden;
 }
 body {
 	font-family: $font_primary;
@@ -548,6 +547,13 @@ body.logged-in.admin-bar {
 /*** Home ***/
 section {
 	height: 100vh;
+	height: 100dvh;
+	height: 100svh;
+	height: 100lvh;
+	block-size: 100vb;
+	block-size: 100dvb;
+	block-size: 100svb;
+	block-size: 100lvb;
 	padding: 25px;
 	position: relative;
 	@include flexgroup();
