@@ -44,7 +44,7 @@ jQuery(document).ready(function ($) {
 	/*** END Homepage Animation ***/
 
 	/*** Fix on mobile view to fix all content on screen ***/
-	var vhHeight = $("body").height();
+	var vhHeight = $("body,html,.section_home").height();
 	var chromeNavbarHeight = vhHeight - window.innerHeight;
 	$('body').css({ height: window.innerHeight, marginTop: chromeNavbarHeight });
 
