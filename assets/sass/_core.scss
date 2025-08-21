@@ -546,14 +546,9 @@ body.logged-in.admin-bar {
 
 /*** Home ***/
 section {
+	height: 100%;
 	height: 100vh;
 	height: 100dvh;
-	height: 100svh;
-	height: 100lvh;
-	block-size: 100vb;
-	block-size: 100dvb;
-	block-size: 100svb;
-	block-size: 100lvb;
 	padding: 25px;
 	position: relative;
 	@include flexgroup();
