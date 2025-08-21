@@ -546,7 +546,8 @@ body.logged-in.admin-bar {
 
 /*** Home ***/
 section {
-	height: 100vh;
+	height: 100vh; //100vh
+	max-height: -webkit-fill-available;
 	padding: 25px;
 	position: relative;
 	@include flexgroup();
