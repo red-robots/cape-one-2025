@@ -45,7 +45,7 @@ var params={};location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(s,k,v){
       <div class="header-inner">
         <div id="site-logo" class="logo">
           <a href="<?php bloginfo('url'); ?>">
-           <img src="<?php bloginfo('template_url'); ?>/images/logo.svg">
+           <img src="<?php bloginfo('template_url'); ?>/images/logo.png">
           </a>
         </div>
 

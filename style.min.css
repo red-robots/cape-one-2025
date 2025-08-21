@@ -1362,7 +1362,7 @@ a:hover{color:#dd8698}
 .wrapper.narrow{max-width:1000px}
 .site{position:relative;overflow-x:hidden;overflow-y:auto}
 .flexwrap{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
-.site-header{top:40px;left:3px;width:100%;z-index:1000;-webkit-transition:all ease .5s;transition:all ease .5s;position:absolute;z-index:500}
+.site-header{top:40px;left:5px;width:100%;z-index:1000;-webkit-transition:all ease .5s;transition:all ease .5s;position:absolute;z-index:500}
 .site-header.fixed nav.new-nav .menu-item a{color:rgba(0,0,0,.7)}
 .site-header.fixed .logo img{-webkit-filter:invert(100%);filter:invert(100%)}
 .site-header.fixed .menu-item a,.site-header.fixed .right div,.site-header.fixed .right div a{color:rgba(0,0,0,.7)}
