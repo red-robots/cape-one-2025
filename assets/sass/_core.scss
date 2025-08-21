@@ -585,9 +585,13 @@ section {
 
 	.main-content,
 	h1 {
-		font-size: 45px;
+		font-size: 36px;
 		position: relative;
 		z-index: 2;
+
+		@include desk {
+			font-size: 45px;
+		}
 	}
 
 	p {
