@@ -589,14 +589,15 @@ section {
 		}
 	}
 
-	.main-content,
-	h1 {
+	.main-content {
 		font-size: 36px;
+		margin-bottom: 150px;
 		position: relative;
 		z-index: 2;
 
 		@include desk {
 			font-size: 45px;
+			margin-bottom: 0;
 		}
 	}
 
