@@ -1425,13 +1425,13 @@ body.nav-open{overflow:hidden}
 body.nav-open #overlay{display:block;-webkit-animation-name:fadeIn;animation-name:fadeIn}
 body.nav-open .menu-toggle{opacity:0}
 body.logged-in.admin-bar .site-header{top:60px}
-section{height:100%;height:100vh;height:100dvh;overflow:hidden;padding:25px;position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+section{height:100%;height:calc(100vh + 175px);height:calc(100dvh + 175px);padding:25px;position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 section.section_home{background-color:#3c8a91;-webkit-transition:all ease .3s;transition:all ease .3s}
 section.section_home.hide{opacity:0}
 section.section_home:before{content:"";background-image:url("images/bg-icon.svg");background-position:right top;background-repeat:no-repeat;background-size:100% 100%;position:absolute;top:0;right:-100%;z-index:1;height:100vh;width:100%;-webkit-transition:all ease 1.5s;transition:all ease 1.5s}
 section.section_home.show-bg:before{right:-50%}
 section .main-content,section h1{font-size:36px;position:relative;z-index:2}
-section p{color:#fff;line-height:1.8em}
+section p{color:#fff;line-height:1.8em;margin-bottom:0}
 section a{color:#fff;text-decoration:underline}
 section a:hover{color:#052952}
 section .bottom-content{position:absolute;left:15px;bottom:20px;z-index:2;padding:0 15px;width:84%}
@@ -1448,6 +1448,7 @@ section .main-content.show,section .bottom-content.show{opacity:1}
 .navbar{-webkit-box-shadow:none;box-shadow:none;display:block}
 #mobile-menu-toggle{display:none}
 .mobile-nav-wrap{display:none}
+section{height:100vh;height:100dvh}
 }@media(min-width:1200px){.logo{padding-left:30px}
 section .main-content,section h1{font-size:45px}
 section .bottom-content{padding:0;left:50px}
